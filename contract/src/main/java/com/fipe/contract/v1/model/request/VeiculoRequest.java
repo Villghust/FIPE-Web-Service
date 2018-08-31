@@ -19,3 +19,5 @@ public class VeiculoRequest {
     @NotNull(message = "É necessário informar o ano do veículo!")
     private int ano;
 }
+
+// TODO 1 - Verificar se é aqui que definimos o que será informado pelo usuário para definir a Query.

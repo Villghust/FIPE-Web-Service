@@ -27,4 +27,6 @@ public class VeiculoMapper {
                 .marca(veiculoRequest.getMarca())
                 .build();
     }
+
+    // TODO 1.1 - Verificar se estão corretos os métodos.
 }

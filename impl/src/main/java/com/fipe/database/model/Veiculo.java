@@ -57,6 +57,9 @@ public class Veiculo {
 
 }
 
+// TODO 3 - Verificar a necessidade de utilizar um enum para definir o tipo de veículo.
+// TODO 3.1 - Perguntar se o Enum deve estar em uma classe separada para manter esta como POJO.
+
 /*
 CREATE TABLE veiculos(VALOR_VEICULO VARCHAR(100) NOT NULL,
     MARCA VARCHAR(50) NOT NULL,
