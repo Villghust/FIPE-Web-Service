@@ -8,6 +8,15 @@ public class VeiculoMapper {
 
     public static VeiculoResponse mapperToContract(VeiculoModel veiculoModel) {
         return VeiculoResponse.builder()
+                .siglaCombustivel(veiculoModel.getSiglaCombustivel())
+                .tipoVeiculo(veiculoModel.getTipoVeiculo())
+                .mesReferencia(veiculoModel.getMesReferencia())
+                .codigoFipe(veiculoModel.getCodigoFipe())
+                .combustivel(veiculoModel.getCombustivel())
+                .anoModelo(veiculoModel.getAnoModelo())
+                .modelo(veiculoModel.getModelo())
+                .marca(veiculoModel.getMarca())
+                .valor(veiculoModel.getValor())
                 .build();
     }
 
