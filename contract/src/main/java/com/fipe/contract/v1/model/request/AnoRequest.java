@@ -12,13 +12,11 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class VeiculoRequest {
+public class AnoRequest {
     @NotNull(message = "É necessário informar o tipo do veículo!")
     private TipoVeiculo tipoVeiculo;
     @NotNull(message = "É necessário informar a marca do veículo!")
     private int marca;
     @NotNull(message = "É necessário informar o modelo do veículo!")
     private int modelo;
-    @NotNull(message = "É necessário informar o ano do veículo!")
-    private int ano;
 }
