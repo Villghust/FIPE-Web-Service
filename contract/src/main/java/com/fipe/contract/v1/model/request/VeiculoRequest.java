@@ -20,5 +20,5 @@ public class VeiculoRequest {
     @NotNull(message = "É necessário informar o modelo do veículo!")
     private int modelo;
     @NotNull(message = "É necessário informar o ano do veículo!")
-    private int ano;
+    private String ano;
 }
