@@ -14,19 +14,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "veiculos")
 public class Veiculo {
-
-    public enum TipoVeiculo {
-
-        CARROS(1), MOTOS(2), CAMINHOES(3);
-
-        @Getter
-        public int tipo;
-
-        TipoVeiculo(int tipo) {
-            this.tipo = tipo;
-        }
-    }
-
     @Id
     @Column
     private String codigoFipe;
@@ -50,35 +37,8 @@ public class Veiculo {
     private String mesReferencia;
 
     @Column
-    private int tipoVeiculo;
+    private TipoVeiculo tipoVeiculo;
 
     @Column
     private char siglaCombustivel;
-
 }
-
-// TODO 3 - Verificar a necessidade de utilizar um enum para definir o tipo de veículo.
-// TODO 3.1 - Perguntar se o Enum deve estar em uma classe separada para manter esta como POJO.
-
-/*
-CREATE TABLE veiculos(VALOR_VEICULO VARCHAR(100) NOT NULL,
-    MARCA VARCHAR(50) NOT NULL,
-    MODELO VARCHAR(255) NOT NULL,
-    ANO_MODELO NUMERIC(4) NOT NULL,
-    COMBUSTIVEL VARCHAR(8) NOT NULL,
-    CODIGO_FIPE VARCHAR(10) NOT NULL,
-    MES_REFERENCIA VARCHAR(30) NOT NULL,
-    TIPO_VEICULO INT DEFAULT NULL,
-    SIGLA_COMBUSTIVEL VARCHAR(1) NOT NULL,
-    CONSTRAINT PK_CODIGO_FIPE PRIMARY KEY(CODIGO_FIPE));
-
-CREATE TABLE marcas(NOME VARCHAR(50) NOT NULL,
-    ID_MARCAS SERIAL PRIMARY KEY);
-
-CREATE TABLE modelos(NOME VARCHAR(100) NOT NULL,
-    ID_MODELOS SERIAL PRIMARY KEY);
-
-CREATE TABLE anos(ID_ANOS SERIAL PRIMARY KEY,
-    NOME VARCHAR(50) NOT NULL,
-    CODIGO VARCHAR(50) NOT NULL);
-*/

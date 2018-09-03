@@ -1,5 +1,6 @@
 package com.fipe.model;
 
+import com.fipe.database.model.TipoVeiculo;
 import lombok.*;
 
 @EqualsAndHashCode
@@ -8,14 +9,13 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class VeiculoModel {
-    private String codigoFipe;
     private String valor;
     private String marca;
     private String modelo;
     private int anoModelo;
     private String combustivel;
+    private String codigoFipe;
     private String mesReferencia;
-    private int tipoVeiculo;
+    private TipoVeiculo tipoVeiculo;
     private char siglaCombustivel;
-
 }
