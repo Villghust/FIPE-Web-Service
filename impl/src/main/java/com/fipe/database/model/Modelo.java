@@ -19,6 +19,9 @@ import javax.persistence.Table;
 public class Modelo {
     @Id
     @Column
+    private TipoVeiculo tipoVeiculo;
+
+    @Column
     private String nomeModelo;
 
     @Column

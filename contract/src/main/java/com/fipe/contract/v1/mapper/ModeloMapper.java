@@ -8,6 +8,8 @@ public class ModeloMapper {
 
     public static ModeloResponse mapperToContract(ModeloModel modeloModel) {
         return ModeloResponse.builder()
+                .codigo(modeloModel.getCodigoModelo())
+                .nome(modeloModel.getNomeModelo())
                 .build();
     }
 
@@ -17,4 +19,4 @@ public class ModeloMapper {
     }
 }
 
-// TODO 5
+// TODO Modelo 1 - mapperToModel

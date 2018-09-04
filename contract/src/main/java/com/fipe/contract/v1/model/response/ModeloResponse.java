@@ -13,7 +13,6 @@ import java.util.ArrayList;
 @NoArgsConstructor
 @Builder
 public class ModeloResponse {
-    private ArrayList<Modelo> modelos;
+    private String nome;
+    private int codigo;
 }
-
-// TODO 2

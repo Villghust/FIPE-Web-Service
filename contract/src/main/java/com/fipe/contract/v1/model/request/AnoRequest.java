@@ -16,7 +16,7 @@ public class AnoRequest {
     @NotNull(message = "É necessário informar o tipo do veículo!")
     private TipoVeiculo tipoVeiculo;
     @NotNull(message = "É necessário informar a marca do veículo!")
-    private int marca;
+    private String marca;
     @NotNull(message = "É necessário informar o modelo do veículo!")
-    private int modelo;
+    private String modelo;
 }

@@ -19,6 +19,9 @@ import javax.persistence.Table;
 public class Marca {
     @Id
     @Column
+    private TipoVeiculo tipoVeiculo;
+
+    @Column
     private String nomeMarca;
 
     @Column

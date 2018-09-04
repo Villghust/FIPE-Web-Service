@@ -14,10 +14,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "veiculos")
 public class Veiculo {
-    @Id
-    @Column
-    private String codigoFipe;
-
     @Column
     private String valor;
 
@@ -32,6 +28,10 @@ public class Veiculo {
 
     @Column
     private String combustivel;
+
+    @Id
+    @Column
+    private String codigoFipe;
 
     @Column
     private String mesReferencia;

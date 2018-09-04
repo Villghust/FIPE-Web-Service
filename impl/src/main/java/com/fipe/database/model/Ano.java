@@ -19,6 +19,9 @@ import javax.persistence.Table;
 public class Ano {
     @Id
     @Column
+    private TipoVeiculo tipoVeiculo;
+
+    @Column
     private String nomeAno;
 
     @Column

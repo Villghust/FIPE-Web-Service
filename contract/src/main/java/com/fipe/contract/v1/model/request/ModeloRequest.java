@@ -16,5 +16,5 @@ public class ModeloRequest {
     @NotNull(message = "É necessário informar o tipo do veículo!")
     private TipoVeiculo tipoVeiculo;
     @NotNull(message = "É necessário informar a marca do veículo!")
-    private int marca;
+    private String  marca;
 }

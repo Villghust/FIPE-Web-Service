@@ -13,7 +13,6 @@ import java.util.ArrayList;
 @NoArgsConstructor
 @Builder
 public class AnoResponse {
-    private ArrayList<Ano> anos;
+    private String nome;
+    private String codigo;
 }
-
-// TODO 3

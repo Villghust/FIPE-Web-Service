@@ -16,9 +16,10 @@ public class VeiculoRequest {
     @NotNull(message = "É necessário informar o tipo do veículo!")
     private TipoVeiculo tipoVeiculo;
     @NotNull(message = "É necessário informar a marca do veículo!")
-    private int marca;
+    private String marca;
     @NotNull(message = "É necessário informar o modelo do veículo!")
-    private int modelo;
+    private String modelo;
     @NotNull(message = "É necessário informar o ano do veículo!")
-    private String ano;
+    private int ano;
 }
+// TODO Veiculo 2 - Os requests serão nestes tipos?
